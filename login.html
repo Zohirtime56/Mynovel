@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - روايتي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .login-container {
+            max-width: 500px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .login-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+        }
+        
+        .forgot-password {
+            display: block;
+            text-align: left;
+            margin-top: -10px;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .register-link {
+            text-align: center;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <!-- الشريط العلوي -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-book-open"></i>
+                    روايتي
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="#">الروايات</a></li>
+                    <li><a href="#">الكتّاب</a></li>
+                    <li><a href="#">من نحن</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="register.html" class="btn btn-primary">انضم إلينا</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- محتوى صفحة التسجيل -->
+    <div class="container">
+        <div class="login-container">
+            <h1 class="login-title">تسجيل الدخول</h1>
+            
+            <div class="social-auth">
+                <a href="#" class="social-btn google-btn">
+                    <i class="fab fa-google"></i>
+                    تسجيل الدخول بحساب Google
+                </a>
+                <a href="#" class="social-btn facebook-btn">
+                    <i class="fab fa-facebook-f"></i>
+                    تسجيل الدخول بحساب Facebook
+                </a>
+            </div>
+            
+            <div class="divider">أو</div>
+            
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">البريد الإلكتروني</label>
+                    <input type="email" id="loginEmail" class="form-control" placeholder="أدخل بريدك الإلكتروني" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="loginPassword">كلمة المرور</label>
+                    <input type="password" id="loginPassword" class="form-control" placeholder="أدخل كلمة المرور" required>
+                    <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%;">تسجيل الدخول</button>
+            </form>
+            
+            <div class="register-link">
+                <p>ليس لديك حساب؟ <a href="register.html">أنشئ حساباً جديداً</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- التذييل -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>عن روايتي</h3>
+                    <p>منصة أدبية تهدف إلى دعم الكتّاب المبدعين ونشر أعمالهم الأدبية، وتوفير مساحة للقراء للاستمتاع بمحتوى أدبي متنوع ومتميز.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="#">الروايات</a></li>
+                        <li><a href="#">المسابقات</a></li>
+                        <li><a href="#">المدونة</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>الشروط والسياسات</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">شروط الاستخدام</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">سياسة حقوق النشر</a></li>
+                        <li><a href="#">الإرشادات المجتمعية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>تابعنا</h3>
+                    <div class="social-auth">
+                        <a href="#" class="social-btn google-btn" style="margin-bottom: 10px;">
+                            <i class="fab fa-google"></i>
+                            Gmail
+                        </a>
+                        <a href="#" class="social-btn facebook-btn">
+                            <i class="fab fa-facebook-f"></i>
+                            Facebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; 2023 موقع روايتي</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // كود تسجيل الدخول
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginForm = document.getElementById('loginForm');
+            
+            if (loginForm) {
+                loginForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const email = document.getElementById('loginEmail').value;
+                    const password = document.getElementById('loginPassword').value;
+                    
+                    // هنا سيتم إرسال بيانات الدخول إلى الخادم
+                    console.log('محاولة تسجيل الدخول:', { email, password });
+                    
+                    // رسالة نجاح (مؤقتة)
+                    alert('تم تسجيل الدخول بنجاح! سيتم توجيهك إلى الصفحة الرئيسية.');
+                    
+                    // توجيه المستخدم إلى الصفحة الرئيسية
+                    window.location.href = 'index.html';
+                });
+            }
+            
+            // محاكاة تسجيل الدخول عبر وسائل التواصل الاجتماعي
+            document.querySelectorAll('.social-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const platform = this.classList.contains('google-btn') ? 'Google' : 'Facebook';
+                    alert(`سيتم توجيهك إلى صفحة تسجيل الدخول عبر ${platform}`);
+                });
+            });
+            
+            // نسيان كلمة المرور
+            const forgotPassword = document.querySelector('.forgot-password');
+            if (forgotPassword) {
+                forgotPassword.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const email = prompt('أدخل بريدك الإلكتروني لإعادة تعيين كلمة المرور:');
+                    if (email) {
+                        alert(`تم إرسال رابط إعادة تعيين كلمة المرور إلى ${email}`);
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+                  </html>
